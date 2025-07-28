@@ -5,6 +5,17 @@
     <div class="card shadow p-4" style="width: 100%; max-width: 450px;">
         <h4 class="text-center mb-4">Register</h4>
 
+        {% if messages %}
+        <div class="container-fluid">
+            {% for message in messages %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
         <form method="POST">
             {% csrf_token %}
             <div class="mb-3">
