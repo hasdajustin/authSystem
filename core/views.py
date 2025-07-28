@@ -6,3 +6,6 @@ def home_view(request):
 
 def register_view(request):
     return render(request, 'pages/register.html')
+
+def login_view(request):
+    return render(request, 'pages/login.html')
