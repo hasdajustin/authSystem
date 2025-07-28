@@ -38,7 +38,6 @@ def login_view(request):
     if request.method == 'POST':
         userName = request.POST.get('username')
         userPassword = request.POST.get('userpassword')
-        print(userName, userPassword)
 
         user = authenticate(request, username = userName, password=userPassword)
 
