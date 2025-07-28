@@ -48,3 +48,6 @@ def login_view(request):
             messages.error(request, 'Invalid username or password.')
             return redirect('login_view')
     return render(request, 'pages/login.html')
+
+def profile_view(request):
+    return render(request, 'pages/profile.html')
