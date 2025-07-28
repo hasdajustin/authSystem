@@ -22,7 +22,7 @@ This is a simple Django project that implements user authentication, including:
 git clone https://github.com/hasdajustin/authSystem.git
 ```
 ```bash
-cd django-auth-system
+cd authSystem
 ```
 ### Create and Activate Virtual Environment
 ```bash
